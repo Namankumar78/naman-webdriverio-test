@@ -1,0 +1,26 @@
+{
+  "name": "naman-ui-interview-test",
+  "type": "module",
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/jasmine": "^5.1.4",
+    "@types/jest": "^29.5.12",
+    "@wdio/cli": "^8.36.1",
+    "@wdio/jasmine-framework": "^8.36.1",
+    "@wdio/local-runner": "^8.36.1",
+    "@wdio/spec-reporter": "^8.36.1",
+    "@wdio/visual-service": "^4.1.1",
+    "cross-env": "^7.0.3",
+    "npm-run-all": "^4.1.5",
+    "soft-assert": "^0.2.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "scripts": {
+    "test": "wdio run ./wdio.conf.ts",
+    "allure": "allure generate && allure open"
+  },
+  "dependencies": {
+    "@wdio/allure-reporter": "^8.36.1"
+  }
+}
